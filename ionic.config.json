@@ -1,0 +1,7 @@
+{
+  "name": "pronodona",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
