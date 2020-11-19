@@ -2,20 +2,20 @@
   <ion-page>
     <ion-header :translucent="true" color="secondary">
       <ion-toolbar color="secondary">
-        <ion-title>এক্সচেঞ্জ আমাউন্ট হিসেব করুন</ion-title>
+        <ion-title>প্রণোদনা ক্যালকুলেটর</ion-title>
       </ion-toolbar>
     </ion-header>
 
     <ion-content :fullscreen="true">
       <ion-header collapse="condense">
         <ion-toolbar>
-          <ion-title size="large">এক্সচেঞ্জ আমাউন্ট হিসেব করুন</ion-title>
+          <ion-title size="large">প্রণোদনা2</ion-title>
         </ion-toolbar>
       </ion-header>
       <div id="container">
         <ion-list lines="full" class="ion-no-margin">
           <ion-item>
-            <ion-label position="floating">টাকার পরিমাণ</ion-label>
+            <ion-label position="floating">যত পেতে চান(টাকা)</ion-label>
             <ion-input
               type="number"
               required="true"
@@ -42,26 +42,38 @@
           >হিসেব করুন</ion-button
         >
 
-        <ion-card v-if="calculationComplete">
-          <ion-card-header>
-            <ion-card-title>ফলাফল</ion-card-title>
-          </ion-card-header>
+      <ion-row  v-if="calculationComplete">
+        <ion-col size="6">
+          <ion-card>
+            <ion-card-content>
+              <ion-text color="success" class="ion-text-center">
+                <p>{{ exchangeAmount }}&nbsp;টাকা</p>
+              </ion-text>
+              <ion-text class="ion-text-center">
+                <p>পাঠাতে হবে</p>
+              </ion-text>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
 
-          <ion-card-content>
-            <ion-item-divider>
-              এক্সচেঞ্জ আমাউন্ট &nbsp;<ion-text color="primary">
-                {{ exchangeAmount }}
+        <ion-col size="6">
+          <ion-card>
+            <ion-card-content>
+              <ion-text color="success" class="ion-text-center">
+                <p>{{ incentiveAmount }}&nbsp;টাকা</p>
               </ion-text>
-              &nbsp;টাকা
-            </ion-item-divider>
-            <ion-item-divider>
-              প্রণোদনার পরিমাণ &nbsp;<ion-text color="primary">
-                {{ incentiveAmount }}
+              <ion-text class="ion-text-center">
+                <p>প্রণোদনার পাবেন</p>
               </ion-text>
-              &nbsp;টাকা
-            </ion-item-divider>
-          </ion-card-content>
-        </ion-card>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+
+
+
+
+
       </div>
     </ion-content>
   </ion-page>
@@ -77,13 +89,10 @@ import {
   IonInput,
   IonLabel,
   IonCardContent,
-  IonItemDivider,
   IonButton,
   IonItem,
   IonList,
   IonCard,
-  IonCardHeader,
-  IonCardTitle,
   IonText,
 } from '@ionic/vue'
 
@@ -106,11 +115,8 @@ export default {
     IonToolbar,
     IonInput,
     IonLabel,
-    IonItemDivider,
     IonCardContent,
     IonCard,
-    IonCardHeader,
-    IonCardTitle,
     IonList,
     IonItem,
     IonButton,

@@ -3,13 +3,13 @@
     <ion-tabs>
       <ion-tab-bar slot="bottom">
         <ion-tab-button tab="tab1" href="/tabs/tab1">
-          <ion-icon :icon="triangle" />
-          <ion-label>এক্সচেঞ্জ আমাউন্ট</ion-label>
+          <ion-icon :icon="cash" />
+          <ion-label>কত পাঠাবেন</ion-label>
         </ion-tab-button>
 
         <ion-tab-button tab="tab2" href="/tabs/tab2">
-          <ion-icon :icon="ellipse" />
-          <ion-label>প্রণোদনা</ion-label>
+          <ion-icon :icon="wallet" />
+          <ion-label>কত পাবেন</ion-label>
         </ion-tab-button>
       </ion-tab-bar>
     </ion-tabs>
@@ -25,16 +25,15 @@ import {
   IonIcon,
   IonPage,
 } from '@ionic/vue'
-import { ellipse, square, triangle } from 'ionicons/icons'
+import { wallet, cash } from 'ionicons/icons'
 
 export default {
   name: 'Tabs',
   components: { IonLabel, IonTabs, IonTabBar, IonTabButton, IonIcon, IonPage },
   setup() {
     return {
-      ellipse,
-      square,
-      triangle,
+      wallet,
+      cash,
     }
   },
 }
