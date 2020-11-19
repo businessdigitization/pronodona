@@ -63,7 +63,7 @@
                 <p>{{ Math.round(incentiveAmount * 100) / 100 }}&nbsp;টাকা</p>
               </ion-text>
               <ion-text class="ion-text-center">
-                <p>প্রণোদনার পাবেন</p>
+                <p>প্রণোদনা পাবেন</p>
               </ion-text>
             </ion-card-content>
           </ion-card>
