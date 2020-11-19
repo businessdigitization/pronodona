@@ -44,33 +44,37 @@
           >হিসেব করুন</ion-button
         >
 
-      <ion-row v-if="calculationComplete">
-        <ion-col size="6">
-          <ion-card>
-            <ion-card-content>
-              <ion-text color="success" class="ion-text-center">
-                <p>{{ Math.round(incentiveAmount * 100) / 100 }}&nbsp;টাকা</p>
-              </ion-text>
-              <ion-text class="ion-text-center">
-                <p>প্রণোদনা পাবেন</p>
-              </ion-text>
-            </ion-card-content>
-          </ion-card>
-        </ion-col>
+        <ion-row v-if="calculationComplete">
+          <ion-col size="6">
+            <ion-card>
+              <ion-card-content>
+                <ion-text color="success" class="ion-text-center">
+                  <p>{{ Math.round(incentiveAmount * 100) / 100 }}&nbsp;টাকা</p>
+                </ion-text>
+                <ion-text class="ion-text-center">
+                  <p>প্রণোদনা পাবেন</p>
+                </ion-text>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
 
-        <ion-col size="6">
-          <ion-card>
-            <ion-card-content>
-              <ion-text color="success" class="ion-text-center">
-                <p>{{ Math.round(convertedAmountWithIncentive * 100) / 100 }}&nbsp;টাকা</p>
-              </ion-text>
-              <ion-text class="ion-text-center">
-                <p>প্রণোদনা সহ মোট</p>
-              </ion-text>
-            </ion-card-content>
-          </ion-card>
-        </ion-col>
-      </ion-row>
+          <ion-col size="6">
+            <ion-card>
+              <ion-card-content>
+                <ion-text color="success" class="ion-text-center">
+                  <p>
+                    {{
+                      Math.round(convertedAmountWithIncentive * 100) / 100
+                    }}&nbsp;টাকা
+                  </p>
+                </ion-text>
+                <ion-text class="ion-text-center">
+                  <p>প্রণোদনা সহ মোট</p>
+                </ion-text>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+        </ion-row>
       </div>
     </ion-content>
   </ion-page>
