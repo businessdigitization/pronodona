@@ -123,13 +123,10 @@ export default {
   },
   methods: {
     calculate() {
-      // localStorage.setItem('name', "Faruk")
       const takaToSend = this.convertedAmountWithIncentive / 1.02
-
       this.exchangeAmount = (takaToSend / this.exchangeRate) || 0
       this.incentiveAmount = takaToSend * 0.02
       this.calculationComplete = true
-      // console.log(localStorage.getItem('name'))
     },
   },
 }
