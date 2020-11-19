@@ -88,6 +88,8 @@ import {
   IonItem,
   IonList,
   IonCard,
+  IonRow,
+  IonCol,
   IonText,
 } from '@ionic/vue'
 
@@ -116,6 +118,8 @@ export default {
     IonItem,
     IonButton,
     IonText,
+    IonRow,
+    IonCol,
   },
   methods: {
     calculate() {

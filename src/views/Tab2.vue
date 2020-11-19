@@ -90,6 +90,9 @@ import {
   IonItem,
   IonList,
   IonCard,
+  IonRow,
+  IonCol,
+  IonText,
 } from '@ionic/vue'
 
 export default {
@@ -116,6 +119,9 @@ export default {
     IonList,
     IonItem,
     IonButton,
+    IonRow,
+    IonCol,
+    IonText,
   },
   methods: {
     calculate() {
@@ -130,11 +136,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-/* ion-card {
-  --background: #4CAF50;
-  --color: white;
-} */
-
-</style>
