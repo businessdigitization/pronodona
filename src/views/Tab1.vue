@@ -15,7 +15,7 @@
       <div id="container">
         <ion-list lines="full" class="ion-no-margin">
           <ion-item>
-            <ion-label position="floating">যত পেতে চান(টাকা)</ion-label>
+            <ion-label position="floating">যত পাঠাবেন(টাকা)</ion-label>
             <ion-input
               type="number"
               required="true"
@@ -47,7 +47,7 @@
           <ion-card>
             <ion-card-content>
               <ion-text color="success" class="ion-text-center">
-                <p>{{ Math.round(exchangeAmount * 100) / 100 }}&nbsp;টাকা</p>
+                <p>{{ Math.round(exchangeAmount * 100) / 100 }}&nbsp;(ডলার, রিঙ্গিত ইত্যাদি)</p>
               </ion-text>
               <ion-text class="ion-text-center">
                 <p>পাঠাতে হবে</p>
