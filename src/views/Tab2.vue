@@ -49,7 +49,7 @@
           <ion-card>
             <ion-card-content>
               <ion-text color="success" class="ion-text-center">
-                <p>{{ incentiveAmount }}&nbsp;টাকা</p>
+                <p>{{ Math.round(incentiveAmount * 100) / 100 }}&nbsp;টাকা</p>
               </ion-text>
               <ion-text class="ion-text-center">
                 <p>প্রণোদনা পাবেন</p>
@@ -62,7 +62,7 @@
           <ion-card>
             <ion-card-content>
               <ion-text color="success" class="ion-text-center">
-                <p>{{ convertedAmountWithIncentive }}&nbsp;টাকা</p>
+                <p>{{ Math.round(convertedAmountWithIncentive * 100) / 100 }}&nbsp;টাকা</p>
               </ion-text>
               <ion-text class="ion-text-center">
                 <p>প্রণোদনা সহ মোট</p>
